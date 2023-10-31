@@ -1,0 +1,25 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           asyncrepro
+version:        0.1.0.0
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+
+executable asyncrepro-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_asyncrepro
+  hs-source-dirs:
+      app
+  ghc-options: -ticky
+  build-depends:
+      base
+    , network
+    , streaming-commons
+    , warp
+  default-language: Haskell2010

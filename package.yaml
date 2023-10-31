@@ -1,0 +1,17 @@
+name: asyncrepro
+version: 0.1.0.0
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  asyncrepro-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+    - -ticky
+    dependencies:
+    - base
+    - network
+    - streaming-commons
+    - warp
